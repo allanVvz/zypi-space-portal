@@ -6,13 +6,13 @@
   <title>Política de Privacidade — Zypi Space</title>
   <meta name="description" content="Política de Privacidade da Zypi Space, em conformidade com a Lei Geral de Proteção de Dados (LGPD). Saiba quais dados coletamos, como usamos e quais são os seus direitos." />
   <meta name="robots" content="index, follow" />
-  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Política de Privacidade — Zypi Space" />
   <meta property="og:description" content="Como a Zypi Space trata os seus dados pessoais, em conformidade com a LGPD." />
-  <meta property="og:image" content="assets/cover.svg" />
+  <meta property="og:image" content="assets/cover.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -78,8 +78,7 @@
       align-items: center;
       gap: 12px;
     }
-    .nav .logo-badge { width: 44px; height: 44px; }
-    .nav .logo-badge .wordmark { font-size: 13px; text-align: center; }
+    .nav img.logo { height: 40px; width: auto; display: block; border-radius: 8px; }
     .nav .header-name { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 1.15rem; color: #fff; }
     .nav .header-name .dot { color: var(--orange); }
     .nav .spacer { flex: 1; }
@@ -97,9 +96,7 @@
       text-align: center;
       overflow: hidden;
     }
-    .hero .brand-lockup { margin-bottom: 26px; }
-    .hero .brand-lockup .wordmark { font-size: clamp(2.4rem, 7vw, 3.6rem); }
-    .hero .tagline { color: #aeb9c6; font-size: clamp(.85rem, 2.4vw, 1rem); letter-spacing: .5px; margin-top: 6px; }
+    .hero .cover { width: 100%; max-width: 560px; height: auto; margin: 0 auto 26px; display: block; border-radius: 16px; }
     .hero h1 {
       font-family: "Poppins", sans-serif;
       font-size: clamp(1.6rem, 4vw, 2.3rem);
@@ -190,9 +187,7 @@
 
   <header class="site">
     <nav class="nav">
-      <span class="logo-badge">
-        <span class="wordmark"><span class="zy">Zypi</span><br /><span class="space">Space</span></span>
-      </span>
+      <img class="logo" src="assets/logo.png" alt="Zypi Space" />
       <span class="header-name">Zypi<span class="dot"> Space</span></span>
       <span class="spacer"></span>
       <a class="back" href="https://zypi.com.br">← Voltar ao site</a>
@@ -201,10 +196,7 @@
 
   <div class="hero">
     <div class="inner">
-      <div class="brand-lockup">
-        <div class="wordmark"><span class="zy">Zypi</span> <span class="space">Space</span></div>
-        <div class="tagline">Conectando pessoas e negócios</div>
-      </div>
+      <img class="cover" src="assets/cover.png" alt="Zypi Space — Conectando pessoas e negócios" />
       <h1>Política de Privacidade</h1>
       <p class="sub">Sua privacidade é importante para nós. Saiba como a Zypi Space coleta, usa e protege os seus dados pessoais.</p>
       <span class="updated">Última atualização: 20 de junho de 2026</span>
@@ -380,7 +372,7 @@
   <footer class="site">
     <div class="inner">
       <div class="brand-lockup">
-        <span class="wordmark"><span class="zy">Zypi</span> <span class="space">Space</span></span>
+        <img src="assets/logo.png" alt="Zypi Space" style="height:64px;width:auto;border-radius:10px;" />
       </div>
       <p>© 2026 Zypi Space — Todos os direitos reservados.<br />
       Documento em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
