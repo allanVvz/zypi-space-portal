@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — Zypi Space</title>
+  <meta name="description" content="Política de Privacidade da Zypi Space, em conformidade com a Lei Geral de Proteção de Dados (LGPD). Saiba quais dados coletamos, como usamos e quais são os seus direitos." />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Política de Privacidade — Zypi Space" />
+  <meta property="og:description" content="Como a Zypi Space trata os seus dados pessoais, em conformidade com a LGPD." />
+  <meta property="og:image" content="assets/cover.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      /* Identidade Zypi Space */
+      --navy:        #0f1d2e;
+      --navy-2:      #16273b;
+      --navy-soft:   #1e3147;
+      --orange:      #e8853d;
+      --orange-2:    #f29d57;
+      --orange-deep: #c96a28;
+      --orange-tint: #fbeede;
+      --ink:         #1c2430;
+      --ink-soft:    #4a5563;
+      --line:        #e4e8ec;
+      --bg:          #ffffff;
+      --bg-soft:     #f7f9fa;
+      --radius:      14px;
+      --maxw:        860px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--orange-deep); }
+
+    /* ---------- Brand wordmark (inline) ---------- */
+    .wordmark { font-family: "Poppins", sans-serif; font-weight: 800; letter-spacing: -.5px; line-height: 1; }
+    .wordmark .zy { color: var(--orange); }
+    .wordmark .space { color: #fff; font-weight: 500; }
+
+    .logo-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--navy);
+      border-radius: 12px;
+    }
+
+    /* ---------- Header ---------- */
+    header.site {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: var(--navy);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .nav {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .nav .logo-badge { width: 44px; height: 44px; }
+    .nav .logo-badge .wordmark { font-size: 13px; text-align: center; }
+    .nav .header-name { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 1.15rem; color: #fff; }
+    .nav .header-name .dot { color: var(--orange); }
+    .nav .spacer { flex: 1; }
+    .nav a.back { font-size: .9rem; text-decoration: none; font-weight: 600; color: var(--orange-2); }
+    .nav a.back:hover { color: #fff; }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative;
+      background:
+        radial-gradient(1200px 400px at 50% -10%, rgba(232,133,61,.18), transparent 60%),
+        linear-gradient(180deg, var(--navy-2), var(--navy));
+      color: #fff;
+      padding: 64px 20px 60px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero .brand-lockup { margin-bottom: 26px; }
+    .hero .brand-lockup .wordmark { font-size: clamp(2.4rem, 7vw, 3.6rem); }
+    .hero .tagline { color: #aeb9c6; font-size: clamp(.85rem, 2.4vw, 1rem); letter-spacing: .5px; margin-top: 6px; }
+    .hero h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: clamp(1.6rem, 4vw, 2.3rem);
+      margin: 0 0 10px;
+      font-weight: 700;
+    }
+    .hero p.sub { font-size: 1.05rem; color: #c8d1db; margin: 0 auto; max-width: 600px; }
+    .hero .updated {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 6px 14px;
+      background: rgba(232,133,61,.15);
+      border: 1px solid rgba(232,133,61,.4);
+      border-radius: 999px;
+      font-size: .85rem;
+      color: var(--orange-2);
+    }
+    .hero::after {
+      content: "";
+      position: absolute; left: 0; right: 0; bottom: 0; height: 4px;
+      background: linear-gradient(90deg, var(--orange-deep), var(--orange), var(--orange-2));
+    }
+
+    /* ---------- Layout ---------- */
+    main { max-width: var(--maxw); margin: 0 auto; padding: 48px 20px 80px; }
+
+    .toc {
+      background: var(--bg-soft);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px 26px;
+      margin-bottom: 44px;
+    }
+    .toc h2 { font-family:"Poppins",sans-serif; margin: 0 0 12px; font-size: .95rem; text-transform: uppercase; letter-spacing: .8px; color: var(--ink-soft); }
+    .toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 32px; }
+    .toc li { margin: 4px 0; break-inside: avoid; }
+    .toc a { text-decoration: none; color: var(--ink); }
+    .toc a:hover { color: var(--orange-deep); text-decoration: underline; }
+
+    section.clause { margin-bottom: 38px; scroll-margin-top: 80px; }
+    section.clause h2 {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.35rem;
+      margin: 0 0 12px;
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      color: var(--ink);
+    }
+    section.clause h2 .num { color: var(--orange); font-weight: 800; }
+    section.clause h3 { font-family:"Poppins",sans-serif; font-size: 1.05rem; margin: 20px 0 6px; }
+    p, li { color: var(--ink-soft); }
+    section.clause p { margin: 0 0 12px; }
+    ul.clean { padding-left: 20px; }
+    ul.clean li { margin: 6px 0; }
+
+    .callout {
+      background: var(--orange-tint);
+      border-left: 4px solid var(--orange);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+    .callout p { margin: 0; color: var(--ink); }
+
+    .placeholder { background: #fff6e6; border: 1px dashed var(--orange); padding: 2px 6px; border-radius: 6px; font-size: .92em; color: #8a5a00; }
+
+    table.legal { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: .95rem; }
+    table.legal th, table.legal td { text-align: left; padding: 10px 12px; border: 1px solid var(--line); vertical-align: top; }
+    table.legal th { background: var(--bg-soft); color: var(--ink); font-family:"Poppins",sans-serif; }
+
+    /* ---------- Footer ---------- */
+    footer.site { background: var(--navy); color: #9fb0c0; padding: 40px 20px; text-align: center; font-size: .9rem; }
+    footer.site .inner { max-width: var(--maxw); margin: 0 auto; }
+    footer.site .brand-lockup { margin-bottom: 14px; }
+    footer.site .brand-lockup .wordmark { font-size: 1.6rem; }
+    footer.site a { color: var(--orange-2); }
+
+    .top-link { display: inline-block; margin-top: 8px; font-size: .85rem; color: var(--orange-deep); }
+
+    @media (max-width: 600px) {
+      .toc ol { columns: 1; }
+      .hero { padding: 48px 18px 44px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site">
+    <nav class="nav">
+      <span class="logo-badge">
+        <span class="wordmark"><span class="zy">Zypi</span><br /><span class="space">Space</span></span>
+      </span>
+      <span class="header-name">Zypi<span class="dot"> Space</span></span>
+      <span class="spacer"></span>
+      <a class="back" href="https://zypi.com.br">← Voltar ao site</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="inner">
+      <div class="brand-lockup">
+        <div class="wordmark"><span class="zy">Zypi</span> <span class="space">Space</span></div>
+        <div class="tagline">Conectando pessoas e negócios</div>
+      </div>
+      <h1>Política de Privacidade</h1>
+      <p class="sub">Sua privacidade é importante para nós. Saiba como a Zypi Space coleta, usa e protege os seus dados pessoais.</p>
+      <span class="updated">Última atualização: 20 de junho de 2026</span>
+    </div>
+  </div>
+
+  <main>
+    <nav class="toc" aria-label="Índice">
+      <h2>Índice</h2>
+      <ol>
+        <li><a href="#quem-somos">Quem somos</a></li>
+        <li><a href="#dados">Dados que coletamos</a></li>
+        <li><a href="#finalidades">Finalidades do tratamento</a></li>
+        <li><a href="#bases-legais">Bases legais</a></li>
+        <li><a href="#cookies">Cookies e rastreamento</a></li>
+        <li><a href="#compartilhamento">Compartilhamento</a></li>
+        <li><a href="#seguranca">Armazenamento e segurança</a></li>
+        <li><a href="#retencao">Retenção de dados</a></li>
+        <li><a href="#direitos">Seus direitos</a></li>
+        <li><a href="#exercer">Como exercer seus direitos</a></li>
+        <li><a href="#alteracoes">Alterações nesta política</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ol>
+    </nav>
+
+    <section class="clause" id="quem-somos">
+      <h2><span class="num">1.</span> Quem somos</h2>
+      <p>Esta Política de Privacidade descreve como a <strong>Zypi Space</strong> (<span class="placeholder">razão social: [preencher] — CNPJ: [preencher]</span>), responsável pelo portal de aluguel de imóveis em Itapema/SC e região, trata os dados pessoais dos visitantes e usuários deste site (“você” ou “titular”).</p>
+      <p>Atuamos como <strong>controladora</strong> dos dados pessoais, nos termos da <strong>Lei nº 13.709/2018 — Lei Geral de Proteção de Dados Pessoais (LGPD)</strong>. Ao utilizar nosso site e nossos serviços, você declara estar ciente desta política.</p>
+    </section>
+
+    <section class="clause" id="dados">
+      <h2><span class="num">2.</span> Dados que coletamos</h2>
+      <p>Coletamos apenas os dados necessários para apresentar imóveis, atender ao seu interesse e, quando aplicável, conduzir uma locação. Os dados podem ser:</p>
+
+      <h3>2.1. Dados de contato (fornecidos por você)</h3>
+      <ul class="clean">
+        <li>Nome completo;</li>
+        <li>E-mail;</li>
+        <li>Telefone / WhatsApp;</li>
+        <li>Mensagens e preferências enviadas ao demonstrar interesse em um imóvel ou solicitar uma visita.</li>
+      </ul>
+
+      <h3>2.2. Dados de navegação (coletados automaticamente)</h3>
+      <ul class="clean">
+        <li>Endereço IP, tipo de navegador e dispositivo;</li>
+        <li>Páginas e imóveis visitados, tempo de permanência e origem do acesso;</li>
+        <li>Dados de cookies e identificadores de ferramentas de análise e publicidade (ex.: Google Analytics, Meta Pixel).</li>
+      </ul>
+
+      <h3>2.3. Dados para contrato de locação (quando aplicável)</h3>
+      <p>Caso você avance para a etapa de cadastro ou locação, poderemos coletar dados adicionais necessários à formalização do contrato e à análise cadastral, tais como:</p>
+      <ul class="clean">
+        <li>CPF e/ou RG e documentos de identificação;</li>
+        <li>Comprovantes de renda e de residência;</li>
+        <li>Dados necessários para análise de crédito/garantia locatícia e elaboração do contrato.</li>
+      </ul>
+      <div class="callout">
+        <p><strong>Dados de crianças e adolescentes:</strong> nosso site não é direcionado a menores de 18 anos e não coletamos intencionalmente seus dados.</p>
+      </div>
+    </section>
+
+    <section class="clause" id="finalidades">
+      <h2><span class="num">3.</span> Finalidades do tratamento</h2>
+      <p>Utilizamos seus dados pessoais para as seguintes finalidades:</p>
+      <ul class="clean">
+        <li>Responder a contatos, dúvidas e solicitações de visita ou informação sobre imóveis;</li>
+        <li>Apresentar imóveis compatíveis com o seu interesse;</li>
+        <li>Conduzir a análise cadastral e formalizar contratos de locação, quando aplicável;</li>
+        <li>Melhorar o site, medir audiência e personalizar a sua experiência;</li>
+        <li>Realizar comunicações e campanhas de marketing, mediante seu consentimento, quando exigido;</li>
+        <li>Cumprir obrigações legais, regulatórias e contratuais.</li>
+      </ul>
+    </section>
+
+    <section class="clause" id="bases-legais">
+      <h2><span class="num">4.</span> Bases legais</h2>
+      <p>Todo tratamento de dados é fundamentado em uma base legal prevista no art. 7º da LGPD:</p>
+      <table class="legal">
+        <thead>
+          <tr><th>Finalidade</th><th>Base legal (LGPD)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Atendimento a contatos e pedidos de visita</td><td>Procedimentos preliminares relacionados a contrato / Legítimo interesse</td></tr>
+          <tr><td>Formalização e execução de contrato de locação</td><td>Execução de contrato</td></tr>
+          <tr><td>Análise de navegação e métricas do site</td><td>Legítimo interesse</td></tr>
+          <tr><td>Cookies não essenciais e marketing</td><td>Consentimento</td></tr>
+          <tr><td>Guarda de documentos fiscais e contratuais</td><td>Cumprimento de obrigação legal</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="clause" id="cookies">
+      <h2><span class="num">5.</span> Cookies e tecnologias de rastreamento</h2>
+      <p>Utilizamos cookies e tecnologias similares para o funcionamento do site, análise de audiência e publicidade. Há três categorias principais:</p>
+      <ul class="clean">
+        <li><strong>Essenciais:</strong> necessários para o funcionamento do site;</li>
+        <li><strong>Analíticos:</strong> medem como o site é utilizado (ex.: Google Analytics);</li>
+        <li><strong>Marketing:</strong> exibem anúncios relevantes (ex.: Meta Pixel).</li>
+      </ul>
+      <p>Você pode gerenciar ou desativar cookies a qualquer momento nas configurações do seu navegador. A desativação de alguns cookies pode afetar a sua experiência no site.</p>
+    </section>
+
+    <section class="clause" id="compartilhamento">
+      <h2><span class="num">6.</span> Compartilhamento de dados</h2>
+      <p>Não vendemos seus dados pessoais. Podemos compartilhá-los com terceiros estritamente para as finalidades descritas, tais como:</p>
+      <ul class="clean">
+        <li>Proprietários e parceiros envolvidos na locação do imóvel de seu interesse;</li>
+        <li>Prestadores de serviços de tecnologia, hospedagem, análise e marketing;</li>
+        <li>Instituições de garantia locatícia e análise de crédito, quando aplicável;</li>
+        <li>Autoridades públicas, quando exigido por lei ou ordem judicial.</li>
+      </ul>
+      <p>Exigimos que terceiros tratem seus dados em conformidade com a LGPD.</p>
+    </section>
+
+    <section class="clause" id="seguranca">
+      <h2><span class="num">7.</span> Armazenamento e segurança</h2>
+      <p>Adotamos medidas técnicas e administrativas para proteger seus dados contra acessos não autorizados, perda, alteração ou destruição, incluindo controle de acesso, uso de provedores confiáveis e boas práticas de segurança da informação.</p>
+      <p>Apesar de nossos esforços, nenhum sistema é totalmente imune a incidentes. Em caso de incidente de segurança relevante, comunicaremos os titulares e a Autoridade Nacional de Proteção de Dados (ANPD) conforme a lei.</p>
+    </section>
+
+    <section class="clause" id="retencao">
+      <h2><span class="num">8.</span> Retenção de dados</h2>
+      <p>Mantemos seus dados apenas pelo tempo necessário para cumprir as finalidades desta política ou conforme exigido por obrigações legais e contratuais. Após esse período, os dados são eliminados ou anonimizados de forma segura.</p>
+    </section>
+
+    <section class="clause" id="direitos">
+      <h2><span class="num">9.</span> Seus direitos como titular</h2>
+      <p>Nos termos da LGPD, você tem direito a:</p>
+      <ul class="clean">
+        <li>Confirmar a existência de tratamento e acessar seus dados;</li>
+        <li>Corrigir dados incompletos, inexatos ou desatualizados;</li>
+        <li>Solicitar anonimização, bloqueio ou eliminação de dados desnecessários;</li>
+        <li>Solicitar a portabilidade dos dados;</li>
+        <li>Obter informações sobre o compartilhamento de seus dados;</li>
+        <li>Revogar o consentimento a qualquer momento;</li>
+        <li>Opor-se a tratamentos realizados com base em legítimo interesse.</li>
+      </ul>
+    </section>
+
+    <section class="clause" id="exercer">
+      <h2><span class="num">10.</span> Como exercer seus direitos</h2>
+      <p>Para exercer qualquer um dos seus direitos ou tirar dúvidas sobre esta política, entre em contato com o nosso Encarregado de Proteção de Dados (DPO):</p>
+      <div class="callout">
+        <p>
+          <strong>Encarregado (DPO):</strong> <span class="placeholder">[nome do encarregado]</span><br />
+          <strong>E-mail:</strong> <a href="mailto:privacidade@zypi.com.br">privacidade@zypi.com.br</a> <span class="placeholder">[confirmar e-mail]</span><br />
+          <strong>WhatsApp / Telefone:</strong> <span class="placeholder">[preencher]</span>
+        </p>
+      </div>
+      <p>Responderemos à sua solicitação dentro dos prazos previstos na legislação.</p>
+    </section>
+
+    <section class="clause" id="alteracoes">
+      <h2><span class="num">11.</span> Alterações nesta política</h2>
+      <p>Esta Política de Privacidade pode ser atualizada periodicamente. A versão vigente estará sempre disponível nesta página, com a data da última atualização indicada no topo. Recomendamos a revisão regular deste documento.</p>
+    </section>
+
+    <section class="clause" id="contato">
+      <h2><span class="num">12.</span> Contato</h2>
+      <p>Em caso de dúvidas sobre esta Política de Privacidade ou sobre o tratamento dos seus dados, fale conosco:</p>
+      <div class="callout">
+        <p>
+          <strong>Zypi Space</strong><br />
+          Itapema — Santa Catarina, Brasil<br />
+          E-mail: <a href="mailto:contato@zypi.com.br">contato@zypi.com.br</a> <span class="placeholder">[confirmar]</span>
+        </p>
+      </div>
+      <a class="top-link" href="#">↑ Voltar ao topo</a>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="inner">
+      <div class="brand-lockup">
+        <span class="wordmark"><span class="zy">Zypi</span> <span class="space">Space</span></span>
+      </div>
+      <p>© 2026 Zypi Space — Todos os direitos reservados.<br />
+      Documento em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
+    </div>
+  </footer>
+
+</body>
+</html>
